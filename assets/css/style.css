@@ -1,7 +1,7 @@
 /* Create CSS variables at the root of the document to be used throughout the style sheet */
 :root {
   --white: white;
-  --dark-blue: #13293d;
+  --dark-blue: #2319ac;
   --border-radius: 50px;
 }
 
@@ -69,34 +69,37 @@ footer {
   width: 400px;
   padding: 5px;
   margin: 20px;
+  order: 2;
 }
 
 .code-card {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 0px;
   width: 375px;
-  margin-bottom: 10px;
   margin-left: auto;
   margin-right:auto;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 12px;
+  padding-left: 10px;
+  
+}
+code {
+  font-size: 10px;
+  margin-left: 5px;
 }
 
-
 .card-header {
-  display: block;
+  display: flex;
+  justify-content: center;
   border: 1px solid var(--white);
+  background-color: var(--dark-blue);
   border-radius: 5px;
   position: relative;
   margin-top: -25px;
-  margin-left:auto;
-  margin-right: auto;
-  padding-left: 20px;
+  padding-left: 0px;
+  order: 1;
 }
 
 @media screen and (max-width: 768px) {
