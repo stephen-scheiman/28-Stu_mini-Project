@@ -1,17 +1,107 @@
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
 :root {
-    --font-color: 
+  --white: white;
+  --dark-blue: #13293d;
+  --border-radius: 50px;
 }
 
-header,footer {
-    text-align: center;
+header {
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 section {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-content: center;
-    columns: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  background-color: #d8a47f;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+  margin-top: auto;
+}
+
+.linear-gradient-background {
+    background: linear-gradient(45deg, black, blue);
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3;
+}
+
+.big-box {
+  display: inline-flexbox;
+  border-style: dashed;
+  border-color: var(--white);
+  width: 400px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.code-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0px;
+  width: 375px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+
+.card-header {
+  display: block;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  position: relative;
+  margin-top: -25px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
