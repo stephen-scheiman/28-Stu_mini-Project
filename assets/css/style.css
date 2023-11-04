@@ -33,11 +33,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-nav {
-  display: flex;
-  background-color: #d8a47f;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +47,10 @@ footer {
   margin-top: auto;
 }
 
+p {
+  margin-bottom: 70px;
+}
+
 .linear-gradient-background {
     background: linear-gradient(45deg, black, blue);
 }
@@ -64,29 +63,31 @@ footer {
 
 .big-box {
   display: inline-flexbox;
+  justify-content: space-around;
+  align-items: end;
+  border-radius: 10px;
   border-style: dashed;
   border-color: var(--white);
+  height: 350px;
   width: 400px;
   padding: 5px;
   margin: 20px;
-  order: 2;
 }
 
 .code-card {
   display: flex;
-  flex-direction: column;
-  position: relative;
   width: 375px;
   margin-left: auto;
   margin-right:auto;
+  margin-top: 50px;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
   padding-left: 10px;
-  
 }
+
 code {
-  font-size: 10px;
+  font-size: 16px;
   margin-left: 5px;
 }
 
@@ -99,7 +100,6 @@ code {
   position: relative;
   margin-top: -25px;
   padding-left: 0px;
-  order: 1;
 }
 
 @media screen and (max-width: 768px) {
